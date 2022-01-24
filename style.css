@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #004FF9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFF94C, #004FF9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFF94C, #004FF9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+form {
+    margin: 20px;
+    border-radius: 4px;
+    padding: 40px 60px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+form h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+form h2::before{
+    content: "";
+    width: 15%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: black;
+
+}
+
+label {
+    font-weight: 600;
+    color: #2b2b2b;
+    font-variant: small-caps;
+    font-size: 17px;
+}
+
+input,
+textarea {
+
+    display: block;
+    padding: 10px;
+    margin: 5px 0px;
+    width: 100%;
+    background-color: #eee;
+    border: none;
+    color: rgb(144, 136, 136);
+    border-radius: 2px;
+
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid rgb(180, 177, 177);
+
+}
+
+textarea {
+
+    min-width: 100%;
+    max-height: 100px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    width: 130px;
+    height: 50px;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    color: white;
+    background: #004FF9;
+    font-weight: bold;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFF94C, #004FF9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFF94C, #004FF9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+form p {
+    color: darkgray;
+    font-size: 12px;
+}
